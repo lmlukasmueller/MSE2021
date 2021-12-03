@@ -29,11 +29,13 @@ y_min, y_max = X[:,1].min()-1, X[:,1].max()+1
 xx, yy = np.meshgrid(np.arange(x_min, x_max, h),
                      np.arange(y_min, y_max, h))
 
+#NEW Comment for Git
 # fit the model  
-# clf = svm.SVC(kernel='???', ???) # FIX!!!
+clf = svm.SVC(kernel='???', ???) # FIX!!!
 # clf = svm.SVC(kernel='rbf', degree= 5) # 1 
-# clf = svm.SVC(kernel='linear', gamma= 2) 
-clf = svm.SVC(kernel='poly', degree= 8) 
+clf = svm.SVC(kernel='linear', gamma= 2) 
+clf = svm.SVC(kernel=)
+#clf = svm.SVC(kernel='poly', degree= 8) 
 
 clf.fit(X, Y)
 
